@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Custom Furniture for Bali Villas & Hotels | Bali Best Buy Furniture</title>
+  <meta name="description" content="Free design and fixed quote for villa, hotel, and resort furniture in Bali. Building custom furniture in Bali since 2005. Reply within 1 business day on WhatsApp." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Custom Furniture for Bali Villas & Hotels | Bali Best Buy Furniture" />
+  <meta property="og:description" content="Free design and fixed quote for villa, hotel, and resort furniture in Bali. Building custom furniture in Bali since 2005." />
+  <meta property="og:image" content="images/built-reception.webp" />
+  <meta property="og:url" content="" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Furniture for Bali Villas & Hotels | Bali Best Buy Furniture" />
+  <meta name="twitter:description" content="Free design and fixed quote for villa, hotel, and resort furniture in Bali. Building custom furniture in Bali since 2005." />
+  <meta name="twitter:image" content="images/built-reception.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo/logo-icon.png" />
+
+  <!-- Analytics -->
+  <!-- analytics goes here -->
+
+  <!-- Fonts: Playfair Display (serif headlines) + Inter (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (CDN for prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#CC0000',
+            ink: '#2A2522',
+            paper: '#FAFAFA',
+            sand: '#EFE7DC',
+            teak: '#3C2A1E',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          maxWidth: {
+            content: '1280px',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #2A2522; background: #FFFFFF; }
+    .display { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; line-height: 1.05; letter-spacing: -0.01em; }
+    .focus-ring:focus-visible { outline: 2px solid #CC0000; outline-offset: 3px; }
+
+    /* Hero video styling */
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.55) 100%);
+      z-index: 1;
+    }
+
+    /* Subtle fade-in on scroll for image sections */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* Full-bleed image with overlay caption */
+    .bleed-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 3rem 1.5rem;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body class="antialiased text-ink">
+
+  <!-- ============ HEADER (sits over hero, transparent) ============ -->
+  <header class="absolute top-0 left-0 right-0 z-30">
+    <div class="max-w-content mx-auto flex items-center justify-between px-6 py-5">
+      <a href="#" class="focus-ring inline-flex items-center" aria-label="Bali Best Buy Furniture — Home">
+        <img src="images/logo/logo-horizontal.png" alt="Bali Best Buy Furniture" class="h-12 md:h-14 w-auto" />
+      </a>
+      <a
+        href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project."
+        class="focus-ring hidden md:inline-flex items-center gap-2 rounded-full bg-white/95 backdrop-blur px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-white"
+        rel="noopener"
+      >
+        <span aria-hidden="true">💬</span>
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO (full-screen video with overlay) ============ -->
+  <section class="relative min-h-[100vh] flex items-end overflow-hidden">
+    <!-- Video background -->
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="images/built-reception.webp"
+    >
+      <source src="images/hero-render.mp4" type="video/mp4" />
+    </video>
+    <!-- Dark overlay for text legibility -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero content -->
+    <div class="relative z-20 max-w-content mx-auto w-full px-6 pb-20 md:pb-28 text-white">
+      <div class="max-w-3xl">
+        <h1 class="display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+          See Your Villa Finished —<br />Before You Decide.
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
+          Free design and fixed quote before you commit. Twenty years building custom furniture and interiors for Bali's villas, hotels, and resorts.
+        </p>
+
+        <div class="mt-10">
+          <a
+            href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project."
+            class="focus-ring inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-base md:text-lg font-medium text-white transition hover:opacity-90"
+            rel="noopener"
+          >
+            <span aria-hidden="true">💬</span>
+            Message Us on WhatsApp
+          </a>
+          <p class="mt-4 text-sm text-white/70 max-w-md">
+            Replies within 1 business day. Free design with site visit or signed brief. T&amp;Cs apply.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-6 py-12 text-center">
+      <p class="display text-2xl md:text-3xl text-ink">
+        Twenty years. Hundreds of properties. One workshop.
+      </p>
+      <p class="mt-4 text-sm md:text-base text-gray-500 tracking-[0.2em] uppercase">
+        Villas · Hotels · Resorts · Restaurants · Beach Clubs
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DESIGNED / BUILT / DELIVERED ============ -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-6 pb-20 md:pb-28">
+      <div class="max-w-3xl mb-12 md:mb-16">
+        <p class="text-sm uppercase tracking-[0.25em] text-gray-500 mb-4">Featured Project · Lokále, Bali</p>
+        <h2 class="display text-4xl md:text-6xl">From rendering to reality.</h2>
+        <p class="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
+          Every project starts on screen. Floor plans. Materials. Visuals. Approved before a single piece is built.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <figure class="fade-in">
+          <div class="overflow-hidden">
+            <img
+              src="images/designed-exterior-render.webp"
+              alt="3D render of the Lokále bamboo arch entrance designed by Bali Best Buy Furniture before construction"
+              class="w-full h-auto"
+              loading="eager"
+            />
+          </div>
+          <figcaption class="mt-4 text-xs uppercase tracking-[0.25em] text-gray-500">01 · Designed</figcaption>
+        </figure>
+        <figure class="fade-in">
+          <div class="overflow-hidden">
+            <img
+              src="images/built-exterior.webp"
+              alt="Finished bamboo arch exterior of Lokále in Bali, built by Bali Best Buy Furniture"
+              class="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+          <figcaption class="mt-4 text-xs uppercase tracking-[0.25em] text-gray-500">02 · Built</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM (with side image) ============ -->
+  <section class="bg-sand">
+    <div class="max-w-content mx-auto px-6 py-20 md:py-28">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div>
+          <h2 class="display text-4xl md:text-6xl">
+            Custom furniture in Bali is a leap of faith.
+          </h2>
+          <ul class="mt-10 space-y-4 text-lg md:text-xl text-gray-700">
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="text-brand mt-1">—</span>
+              <span>The sofa arrives darker than promised.</span>
+            </li>
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="text-brand mt-1">—</span>
+              <span>Proportions are wrong on install day.</span>
+            </li>
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="text-brand mt-1">—</span>
+              <span>The workshop blames the designer.</span>
+            </li>
+            <li class="flex gap-4">
+              <span aria-hidden="true" class="text-brand mt-1">—</span>
+              <span>Three months late, over budget.</span>
+            </li>
+          </ul>
+          <p class="mt-12 display text-2xl md:text-3xl text-ink">
+            We built Bali Best Buy Furniture to end this.
+          </p>
+        </div>
+        <div class="fade-in">
+          <img
+            src="images/bamboo-arch-view.webp"
+            alt="Bamboo arch detail framing the view at Lokále, Bali — custom architecture and furniture by Bali Best Buy Furniture"
+            class="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT YOU GET ============ -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-6 py-20 md:py-28">
+      <div class="max-w-3xl mb-14 md:mb-16">
+        <h2 class="display text-4xl md:text-6xl">
+          One studio. One team. Everything designed before you decide.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <!-- Block 1 -->
+        <div class="flex gap-6">
+          <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
+            <img src="images/designed-reception-render.webp" alt="Interior design render" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="display text-2xl md:text-3xl">Designed Before You Decide</h3>
+            <p class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+              Floor plans, materials, and visuals tailored to your project — approved before any deposit.
+            </p>
+          </div>
+        </div>
+        <!-- Block 2 -->
+        <div class="flex gap-6">
+          <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
+            <img src="images/built-reception.webp" alt="Custom reception desk built by Bali Best Buy Furniture" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="display text-2xl md:text-3xl">Built In Our Own Workshop</h3>
+            <p class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+              The chair in the design is the chair that ships.
+            </p>
+          </div>
+        </div>
+        <!-- Block 3 -->
+        <div class="flex gap-6">
+          <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
+            <img src="images/lounge-wide.webp" alt="Hospitality lounge interior in Bali" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="display text-2xl md:text-3xl">Designed for Hospitality</h3>
+            <p class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+              We know what guests notice — and what fails after a year of salt air. Full villa interiors, hotel fit-outs, restaurant and beach club builds.
+            </p>
+          </div>
+        </div>
+        <!-- Block 4 -->
+        <div class="flex gap-6">
+          <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
+            <img src="images/lounge-architecture.webp" alt="Custom interior architecture in Bali" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div>
+            <h3 class="display text-2xl md:text-3xl">One Team, Start to Install</h3>
+            <p class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+              No vendor blame games. Design, fabrication, delivery, and installation under one roof.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FULL-BLEED IMAGE BREAK with quote ============ -->
+  <section class="relative h-[60vh] md:h-[80vh] overflow-hidden">
+    <img
+      src="images/veranda-perspective.webp"
+      alt="Long perspective of a finished veranda in Bali built by Bali Best Buy Furniture"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative z-10 h-full max-w-content mx-auto px-6 flex items-end pb-16 md:pb-24">
+      <div class="max-w-2xl">
+        <p class="display text-3xl md:text-5xl text-white leading-tight">
+          "We've furnished properties across Bali for two decades. Every piece, in our workshop. Every detail, designed first."
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-[0.25em] text-white/80">
+          The Bali Best Buy Furniture Team
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MID-PAGE CTA ============ -->
+  <section class="bg-white">
+    <div class="max-w-content mx-auto px-6 py-20 md:py-24 text-center">
+      <a
+        href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project."
+        class="focus-ring inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-base md:text-lg font-medium text-white transition hover:opacity-90"
+        rel="noopener"
+      >
+        <span aria-hidden="true">💬</span>
+        Send Us Your Property on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="bg-white border-t border-gray-100">
+    <div class="max-w-content mx-auto px-6 py-20 md:py-28">
+      <div class="max-w-3xl mb-14 md:mb-16">
+        <h2 class="display text-4xl md:text-6xl">How it works.</h2>
+      </div>
+
+      <ol class="space-y-10 md:space-y-12 max-w-3xl">
+        <li class="flex gap-6">
+          <span class="display text-3xl md:text-5xl text-brand shrink-0 w-14">1.</span>
+          <p class="text-lg md:text-xl text-gray-800 leading-relaxed pt-1">
+            Send photos or a Maps pin on WhatsApp.
+          </p>
+        </li>
+        <li class="flex gap-6">
+          <span class="display text-3xl md:text-5xl text-brand shrink-0 w-14">2.</span>
+          <p class="text-lg md:text-xl text-gray-800 leading-relaxed pt-1">
+            Quick call or site visit so we understand the project.
+          </p>
+        </li>
+        <li class="flex gap-6">
+          <span class="display text-3xl md:text-5xl text-brand shrink-0 w-14">3.</span>
+          <p class="text-lg md:text-xl text-gray-800 leading-relaxed pt-1">
+            We design your space — free. Drawings, materials, and visuals tailored to your project.
+          </p>
+        </li>
+        <li class="flex gap-6">
+          <span class="display text-3xl md:text-5xl text-brand shrink-0 w-14">4.</span>
+          <p class="text-lg md:text-xl text-gray-800 leading-relaxed pt-1">
+            You approve. We build. 50% deposit on approval, balance on delivery.
+          </p>
+        </li>
+        <li class="flex gap-6">
+          <span class="display text-3xl md:text-5xl text-brand shrink-0 w-14">5.</span>
+          <p class="text-lg md:text-xl text-gray-800 leading-relaxed pt-1">
+            Delivered and installed.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ OBJECTIONS ============ -->
+  <section class="bg-sand">
+    <div class="max-w-content mx-auto px-6 py-20 md:py-28">
+      <div class="max-w-3xl mb-14 md:mb-16">
+        <h2 class="display text-4xl md:text-6xl">Questions we hear most.</h2>
+      </div>
+
+      <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl">
+        <div>
+          <dt class="display text-2xl md:text-3xl text-ink">Architect already?</dt>
+          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+            We collaborate. Send drawings.
+          </dd>
+        </div>
+        <div>
+          <dt class="display text-2xl md:text-3xl text-ink">Long-distance owner?</dt>
+          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+            Not on the island full-time? We do project updates by WhatsApp and video — you'll see progress weekly without flying back.
+          </dd>
+        </div>
+        <div>
+          <dt class="display text-2xl md:text-3xl text-ink">Tight deadline?</dt>
+          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+            Opening date fixed? Tell us. We'll tell you honestly if it's possible — and if it is, we'll commit in writing.
+          </dd>
+        </div>
+        <div>
+          <dt class="display text-2xl md:text-3xl text-ink">Lead time?</dt>
+          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
+            Villa: 8–14 weeks from approved design.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA (image background) ============ -->
+  <section class="relative overflow-hidden">
+    <img
+      src="images/lounge-atmospheric.webp"
+      alt="Bali lounge interior at twilight, designed and built by Bali Best Buy Furniture"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="relative z-10 max-w-content mx-auto px-6 py-28 md:py-36 text-center text-white">
+      <h2 class="display text-4xl md:text-6xl max-w-3xl mx-auto">
+        No deposit. No commitment. Just a design.
+      </h2>
+      <p class="mt-6 text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
+        Send the property. Get a design, a fixed price, and a timeline — back within 1 business day.
+      </p>
+      <div class="mt-10">
+        <a
+          href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project."
+          class="focus-ring inline-flex items-center gap-3 rounded-full bg-brand px-8 py-4 text-base md:text-lg font-medium text-white transition hover:opacity-90"
+          rel="noopener"
+        >
+          <span aria-hidden="true">💬</span>
+          Start on WhatsApp →
+        </a>
+        <p class="mt-5 text-sm text-white/70">
+          Bali-based · Furniture built in Bali for properties in Bali
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-teak text-gray-300">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+        <div>
+          <img
+            src="images/logo/logo-icon.png"
+            alt="Bali Best Buy Furniture"
+            class="h-16 w-16"
+          />
+          <p class="mt-5 display text-xl text-white">Bali Best Buy Furniture</p>
+          <p class="mt-1 text-sm text-gray-400 italic">We Design Before You Decide</p>
+        </div>
+
+        <div>
+          <p class="text-sm uppercase tracking-[0.25em] text-gray-400">Contact</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>
+              <a href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project." class="focus-ring hover:text-white transition" rel="noopener">
+                WhatsApp: +62 811 3090 3088
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@balibestbuyfurniture.com" class="focus-ring hover:text-white transition">
+                info@balibestbuyfurniture.com
+              </a>
+            </li>
+            <li>Jl. Persada 20, Kerobokan, Badung, Bali — Indonesia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 text-xs text-gray-400">
+        © <span id="year">2026</span> Bali Best Buy Furniture. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY MOBILE CTA ============ -->
+  <a
+    id="sticky-cta"
+    href="https://wa.me/6281130903088?text=Hi%20Bali%20Best%20Buy%20Furniture%2C%20I%27m%20interested%20in%20a%20project."
+    class="focus-ring fixed bottom-4 left-4 right-4 md:hidden z-50 hidden items-center justify-center gap-3 rounded-full bg-brand px-6 py-4 text-base font-medium text-white shadow-lg"
+    rel="noopener"
+    aria-label="Message us on WhatsApp"
+  >
+    <span aria-hidden="true">💬</span>
+    Message Us on WhatsApp
+  </a>
+
+  <script>
+    // Reveal sticky mobile CTA after user scrolls past the hero
+    (function () {
+      const cta = document.getElementById('sticky-cta');
+      if (!cta) return;
+      function onScroll() {
+        if (window.scrollY > window.innerHeight * 0.8) {
+          cta.classList.remove('hidden');
+          cta.classList.add('flex');
+        } else {
+          cta.classList.add('hidden');
+          cta.classList.remove('flex');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    // Subtle fade-in on scroll for image sections
+    (function () {
+      const els = document.querySelectorAll('.fade-in');
+      if (!('IntersectionObserver' in window) || els.length === 0) {
+        els.forEach(el => el.classList.add('visible'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
