@@ -90,6 +90,60 @@
       background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
       color: #fff;
     }
+
+    /* Lightbox */
+    .zoomable { cursor: zoom-in; transition: opacity 0.2s ease; }
+    .zoomable:hover { opacity: 0.92; }
+
+    #lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    #lightbox.active { opacity: 1; pointer-events: auto; }
+    #lightbox img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      transform: scale(0.96);
+      transition: transform 0.3s ease;
+    }
+    #lightbox.active img { transform: scale(1); }
+    #lightbox .lightbox-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 2.5rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      transition: color 0.2s;
+    }
+    #lightbox .lightbox-close:hover { color: white; }
+    #lightbox .lightbox-caption {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0; right: 0;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0 1.5rem;
+      pointer-events: none;
+    }
   </style>
 </head>
 
@@ -195,8 +249,8 @@
           <div class="overflow-hidden">
             <img
               src="images/designed-exterior-render.webp"
-              alt="3D render of the Lokalé bamboo arch entrance designed by Bali Best Buy Furniture before construction"
-              class="w-full h-auto"
+              alt="3D render of the Lokalé bamboo arch entrance — designed before construction"
+              class="zoomable w-full h-auto"
               loading="eager"
             />
           </div>
@@ -206,8 +260,8 @@
           <div class="overflow-hidden">
             <img
               src="images/built-exterior.webp"
-              alt="Finished bamboo arch exterior of Lokalé in Bali, built by Bali Best Buy Furniture"
-              class="w-full h-auto"
+              alt="Finished bamboo arch exterior — Lokalé Resorts and Villas, Bali"
+              class="zoomable w-full h-auto"
               loading="lazy"
             />
           </div>
@@ -250,8 +304,8 @@
         <div class="fade-in">
           <img
             src="images/bamboo-arch-view.webp"
-            alt="Bamboo arch detail framing the view at Lokalé, Bali — custom architecture and furniture by Bali Best Buy Furniture"
-            class="w-full h-auto"
+            alt="Bamboo arch detail — Lokalé Resorts and Villas, Bali"
+            class="zoomable w-full h-auto"
             loading="lazy"
           />
         </div>
@@ -272,7 +326,7 @@
         <!-- Block 1 -->
         <div class="flex gap-6">
           <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
-            <img src="images/designed-reception-render.webp" alt="Interior design render" class="w-full h-full object-cover" loading="lazy" />
+            <img src="images/designed-reception-render.webp" alt="Reception interior render — Lokalé Resorts and Villas, Bali" class="zoomable w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <h3 class="display text-2xl md:text-3xl">Designed Before You Decide</h3>
@@ -284,7 +338,7 @@
         <!-- Block 2 -->
         <div class="flex gap-6">
           <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
-            <img src="images/built-reception.webp" alt="Custom reception desk built by Bali Best Buy Furniture" class="w-full h-full object-cover" loading="lazy" />
+            <img src="images/built-reception.webp" alt="Custom reception desk with rattan sunburst wall — Lokalé Resorts and Villas, Bali" class="zoomable w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <h3 class="display text-2xl md:text-3xl">Built In Our Own Workshop</h3>
@@ -296,7 +350,7 @@
         <!-- Block 3 -->
         <div class="flex gap-6">
           <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
-            <img src="images/lounge-wide.webp" alt="Hospitality lounge interior in Bali" class="w-full h-full object-cover" loading="lazy" />
+            <img src="images/lounge-wide.webp" alt="Open-air hospitality lounge — Lokalé Resorts and Villas, Bali" class="zoomable w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <h3 class="display text-2xl md:text-3xl">Designed for Hospitality</h3>
@@ -308,7 +362,7 @@
         <!-- Block 4 -->
         <div class="flex gap-6">
           <div class="shrink-0 w-24 md:w-32 h-32 md:h-40 overflow-hidden bg-sand">
-            <img src="images/lounge-architecture.webp" alt="Custom interior architecture in Bali" class="w-full h-full object-cover" loading="lazy" />
+            <img src="images/lounge-architecture.webp" alt="Bamboo arch lounge interior — Lokalé Resorts and Villas, Bali" class="zoomable w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <h3 class="display text-2xl md:text-3xl">One Team, Start to Install</h3>
@@ -425,9 +479,10 @@
           </dd>
         </div>
         <div>
-          <dt class="display text-2xl md:text-3xl text-ink">Lead time?</dt>
-          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed">
-            Villa: 8–14 weeks from approved design.
+          <dt class="display text-2xl md:text-3xl text-ink">How fast can we build?</dt>
+          <dd class="mt-3 text-base md:text-lg text-gray-700 leading-relaxed space-y-3">
+            <p><span class="font-semibold text-ink">Project — 4 to 8 weeks.</span> Full builds for villas, hotels, resorts, restaurants, and beach clubs. Approved design to install day.</p>
+            <p><span class="font-semibold text-ink">Retail — 1 to 4 weeks.</span> Custom pieces for your home. One chair or a whole room — built piece by piece in our workshop.</p>
           </dd>
         </div>
       </dl>
@@ -561,6 +616,49 @@
 
     // Auto-update copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lightbox — click any .zoomable image to view full-size
+    (function () {
+      const eligible = document.querySelectorAll('img.zoomable');
+      if (eligible.length === 0) return;
+
+      const lb = document.createElement('div');
+      lb.id = 'lightbox';
+      lb.setAttribute('role', 'dialog');
+      lb.setAttribute('aria-modal', 'true');
+      lb.setAttribute('aria-label', 'Image viewer');
+      lb.innerHTML = '<button class="lightbox-close" aria-label="Close">&times;</button><img alt="" /><p class="lightbox-caption"></p>';
+      document.body.appendChild(lb);
+
+      const lbImg = lb.querySelector('img');
+      const lbCap = lb.querySelector('.lightbox-caption');
+      const lbClose = lb.querySelector('.lightbox-close');
+
+      function open(img) {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt || '';
+        lbCap.textContent = img.alt || '';
+        lb.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        lb.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      eligible.forEach(function (img) {
+        img.addEventListener('click', function () { open(img); });
+      });
+
+      lbClose.addEventListener('click', close);
+      lb.addEventListener('click', function (e) {
+        if (e.target === lb) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lb.classList.contains('active')) close();
+      });
+    })();
   </script>
 
 </body>
